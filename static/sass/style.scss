@@ -1,0 +1,72 @@
+/**
+ * The Header template for our theme
+
+Theme Name: flatfy
+Author: Salwa
+Description: Theme flatfy.
+Version: 1.0
+*/
+@import "base";
+@import "mixins";
+
+body {
+    background-color: white;
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arvo';
+    }
+
+    header{
+        .flatfy {
+            background: url(static/img/intro5.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100%;
+            color: white;
+            text-align: center;
+            h1 {
+                padding-top: 3%;
+                font-size: 5em;
+                font-weight: 300;
+                letter-spacing: 6px;
+            }
+            p {
+                padding: 2%;
+                font-weight: 100;
+                font-size: 1.5em;
+
+            }
+            button:nth-child(3){
+                @include button(white, $blue);
+            }
+            button:nth-child(4){
+                background: none;
+                border-radius: 6px;
+                padding: 1em 1.5em;
+                font-family: 'Lato', sans-serif;
+                font-size: 0.8em;
+                font-weight: 400;
+                color:white;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+            }
+            figure {
+                margin-top: 5%;
+                img {
+                    width:2.5em;
+                    height: 2.5em;
+                    margin-bottom: 2em;
+
+                }
+            }
+        }
+    }
+    .nav_menu {
+        background-color: #ebf0f1;
+        color: $greyText;
+        font-size: 150%;
+        font-weight: 400;
+
+    }
+}
