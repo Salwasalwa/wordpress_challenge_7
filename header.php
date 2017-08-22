@@ -14,25 +14,26 @@
     <body>
 
     <header>
-        <div class="flatfy">
-            <h1>Flatfy</h1>
-            <p>Clean & minimal Theme</p>
-            <button type="button" name="button" class="">Twitter</button>
-            <button type="button" name="button" class="">Free Download</button>
-            <figure>
-                <img src="<?php echo get_stylesheet_directory_uri() . '/static/img/circle.png';?>" alt="img">
-            </figure>
-        </div>
-
-        <?php require_once('wp-bootstrap-navwalker.php'); ?>
-
         <div class="container">
-            <div class="nav_menu row">
-                <div class="col-md-6">
+            <div class="flatfy">
+                <h1>Flatfy</h1>
+                <p>Clean & minimal Theme</p>
+                <button type="button" name="button" class="">Twitter</button>
+                <button type="button" name="button" class="">Free Download</button>
+                <figure>
+                    <img src="<?php echo get_stylesheet_directory_uri() . '/static/img/circle.png';?>" alt="img">
+                </figure>
+            </div>
+
+            <?php require_once('wp-bootstrap-navwalker.php'); ?>
+
+
+            <div class="nav_menu navbar navbar-default">
+                <div class="col-md-6 col-sm-3 col-xs-6">
                     <p>Flatfy</p>
                 </div>
-                <nav class="navbar navbar-default col-md-6">
-                    <div class="container">
+                <nav class=" col-md-6 col-sm-9 col-xs-6">
+
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
@@ -49,6 +50,7 @@
                             'menu' => 'navbar_header',
                             'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                             'walker'            => new WP_Bootstrap_Navwalker());
+
                             wp_nav_menu($args)
                         ?>
                     </div>
