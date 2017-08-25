@@ -17,7 +17,7 @@
                     $posts = get_posts($args);
 
                     echo '<h2>'.get_cat_name(3).'</h2>';
-                    echo '<h4>'.category_description(5).'</h4>';
+                    echo '<h4>'.category_description(3).'</h4>';
                     get_template_part( 'template-parts/content_loop_whatis'); ?>
                 </div>
             </div>
@@ -38,29 +38,17 @@
                     $posts = get_posts($args);
 
                     echo '<h2>'.get_cat_name(4).'</h2>';
-                    echo '<h4>'.category_description(5).'</h4>';
+                    echo '<h4>'.category_description(4).'</h4>';
                     get_template_part( 'template-parts/content_loop_2col'); ?>
                 </div>
             </div>
-
+            <button type="button" name="button" class="details">Views Details</button>
+            <button type="button" name="button" class="website">Vist Website</button>
         </div>
 
         <div class="DragGallery">
             <div class="row">
-                <?php
-
-                $args = array(
-                    'category_name'    => 'Drag Gallery'
-                );
-
-                ?>
-                <div class="">
-                <?php
-                    $posts = get_posts($args);
-
-                    echo '<h2>'.get_cat_name(5).'</h2>';
-                    echo '<h4>'.category_description(5).'</h4>';
-                    get_template_part( 'template-parts/content_loop_dragGallery'); ?>
+                <?php get_template_part( 'template-parts/content_loop_dragGallery'); ?>
                 </div>
             </div>
 
@@ -80,7 +68,7 @@
                     $posts = get_posts($args);
 
                     echo '<h2>'.get_cat_name(6).'</h2>';
-                    echo '<h4>'.category_description(5).'</h4>';
+                    echo '<h4>'.category_description(6).'</h4>';
                     get_template_part( 'template-parts/content_loop_2col'); ?>
                 </div>
             </div>
@@ -102,7 +90,7 @@
                     $posts = get_posts($args);
 
                     echo '<h2>'.get_cat_name(7).'</h2>';
-                    echo '<h4>'.category_description(5).'</h4>';
+                    echo '<h4>'.category_description(7).'</h4>';
                     get_template_part( 'template-parts/content_loop_whatis'); ?>
                 </div>
             </div>
@@ -123,8 +111,9 @@
                     $posts = get_posts($args);
 
                     echo '<h2>'.get_cat_name(8).'</h2>';
-                    echo '<h4>'.category_description(5).'</h4>';
+                    echo '<h4>'.category_description(8).'</h4>';
                     get_template_part( 'template-parts/content_loop_2col'); ?>
+                    <button type="button" name="button">Subscribte to our Newsletter</button>
                 </div>
             </div>
 
@@ -144,8 +133,29 @@
                     $posts = get_posts($args);
 
                     echo '<h2>'.get_cat_name(9).'</h2>';
-                    echo '<h4>'.category_description(5).'</h4>';
+                    echo '<h4>'.category_description(9).'</h4>';
                     get_template_part( 'template-parts/content_loop_credits'); ?>
+                </div>
+            </div>
+
+        </div>
+        <div class="DownloadFree">
+            <div class="row">
+                <?php
+
+                $args = array(
+                    'category_name'    => 'Download Free'
+                );
+
+                ?>
+                <div class="">
+                <?php
+                    $posts = get_posts($args);
+
+                    echo '<h2>'.get_cat_name(10).'</h2>';
+                    echo '<h4>'.category_description(10).'</h4>';
+                    get_template_part( 'template-parts/content_loop_2col'); ?>
+                    <button type="button" name="button">Pay With A tweet</button>
                 </div>
             </div>
 

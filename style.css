@@ -11,7 +11,7 @@ body {
   body * {
     margin: 0;
     padding: 0;
-    font-family: 'Arvo'; }
+    font-family: 'Arvo', sans-serif; }
   body .container {
     width: 100%; }
   body header .flatfy {
@@ -67,22 +67,41 @@ body {
       padding: 1em; }
   body .nav li a {
     padding: 1em 0.5em; }
-  body main {
+  body main h4 {
+    font-size: 1em;
+    font-weight: 300;
+    color: #8D8D8D;
+    padding: 0.5em 0 0 0; }
+  body main article h3 {
+    font-weight: 700;
+    font-size: 1.8em;
+    padding: 0 0 1em 0; }
+  body main article p {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 1em 1em 2em 0; }
+  body main .whatis {
+    text-align: center;
     padding: 0 18%; }
-    body main .subtitle, body main h4 {
-      font-size: 1em;
-      font-weight: 300;
-      color: #8D8D8D;
-      padding: 1.5em 0 0 0; }
-    body main article h3 {
-      font-weight: 700;
-      font-size: 1.8em;
-      padding: 0 0 1em 0; }
-    body main article p {
-      font-size: 1em;
-      font-weight: 300;
-      padding: 1em 1em 2em 0; }
-    body main article .details {
+    body main .whatis h4 {
+      padding-bottom: 1em; }
+  body main .fullresponsive, body main .DragGallery, body main .FontAwesomeGlyphicon {
+    padding: 2% 18%; }
+    body main .fullresponsive img, body main .DragGallery img, body main .FontAwesomeGlyphicon img {
+      width: 100%;
+      height: 100%; }
+  body main .fullresponsive, body main .FontAwesomeGlyphicon {
+    background-color: #f8f8f8; }
+  body main .ScreenApp {
+    text-align: center; }
+  body main .GetLiveUpdates {
+    background-color: #36485f;
+    padding: 2% 18%;
+    color: white;
+    text-align: center; }
+    body main .GetLiveUpdates p {
+      padding: 1em 0 3em 0; }
+    body main .GetLiveUpdates button {
       color: white;
       background-color: #00c69d;
       border: none;
@@ -92,10 +111,44 @@ body {
       font-weight: 400;
       letter-spacing: 1.5px;
       cursor: pointer;
-      font-family: 'Lato', sans-serif; }
-    body main article .website {
+      font-family: 'Lato', sans-serif;
+      font-size: 2em;
+      padding-left: 2em;
+      padding: 2rem 15rem;
+      border-radius: 0;
+      margin-bottom: 2em; }
+  body main .Credits {
+    padding: 2% 18%;
+    text-align: center; }
+    body main .Credits .credits {
+      display: grid;
+      grid-template-columns: auto auto; }
+      body main .Credits .credits i {
+        padding: 3em;
+        background-color: #f8f8f8;
+        border-radius: 50%;
+        font-size: 1.5em; }
+      body main .Credits .credits h3 {
+        font-weight: 700;
+        font-size: 1.8em;
+        padding: 0 0 1em 0; }
+      body main .Credits .credits p {
+        font-size: 1em;
+        font-weight: 300;
+        text-align: left;
+        padding: 1em 0 2em 0; }
+  body main .DownloadFree {
+    background: url(static/img/banner-bg.jpg) no-repeat center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2% 18%;
+    text-align: center;
+    color: white; }
+    body main .DownloadFree p {
+      padding: 1em 0 3em 0; }
+    body main .DownloadFree button {
       color: white;
-      background-color: #288cdd;
+      background-color: #36485f;
       border: none;
       border-radius: 6px;
       padding: 1em 1.5em;
@@ -103,12 +156,35 @@ body {
       font-weight: 400;
       letter-spacing: 1.5px;
       cursor: pointer;
-      font-family: 'Lato', sans-serif; }
-    body main .whatis {
-      text-align: center; }
-    body main .fullresponsive img, body main .DragGallery img, body main .FontAwesomeGlyphicon img {
-      width: 100%;
-      height: 100%; }
+      font-family: 'Lato', sans-serif;
+      margin: 1em;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      border-radius: 3px;
+      padding: 0.5em 1.5em;
+      margin-bottom: 2em; }
+  body main .details {
+    color: white;
+    background-color: #00c69d;
+    border: none;
+    border-radius: 6px;
+    padding: 1em 1.5em;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif; }
+  body main .website {
+    color: white;
+    background-color: #288cdd;
+    border: none;
+    border-radius: 6px;
+    padding: 1em 1.5em;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif; }
   body .contact {
     padding: 1% 20%; }
     body .contact h2, body .contact .subtitle {

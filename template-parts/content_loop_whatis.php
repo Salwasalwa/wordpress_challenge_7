@@ -9,6 +9,5 @@ foreach ($posts as $post) {
             <?php the_post_thumbnail() ?>
             <h3><?php the_title(); ?></h3>
             <p><?php the_content(); ?></p>
-
         </article>
         <?php };?>

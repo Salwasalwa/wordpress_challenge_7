@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/static/external/bootstrap/dist/css/bootstrap.min.css';?>">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/static/external/bootstrap/dist/css/bootstrap-theme.min.css';?>">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/static/external/font-awesome/css/font-awesome.min.css'; ?>">
-        <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri()?>" >
         <?php wp_head(); ?>
     </head>
