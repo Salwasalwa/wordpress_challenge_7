@@ -27,7 +27,7 @@ foreach ($posts as $post) {
                     echo $descpCatg;
                 ?>
 
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
                 <button type="button" name="button" class="details">Views Details</button>
                 <button type="button" name="button" class="website">Vist Website</button>
             </div>

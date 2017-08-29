@@ -6,7 +6,7 @@ foreach ($posts as $post) {
     ?>
         <article class="">
             <div class="col-md-6 col-sm-6">
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
             </div>
             <div class="col-md-6 col-sm-6">
                 <?php the_post_thumbnail() ?>

@@ -11,7 +11,7 @@ foreach ($posts as $post) {
 
             <div>
                 <h3><?php the_title(); ?></h3>
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
             </div>
         </article>
         <?php };?>

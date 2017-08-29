@@ -1,6 +1,4 @@
     <?php get_header(); ?>
-
-
     <main>
         <div class="whatis">
             <div class="row">
