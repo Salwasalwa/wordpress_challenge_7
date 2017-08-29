@@ -17,8 +17,12 @@ body {
 
     .container {
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
-    header{
+
+    header {
+        width: 100%;
         .flatfy {
             background: url(static/img/intro5.jpg) no-repeat center bottom;
             background-repeat: no-repeat;
@@ -26,22 +30,26 @@ body {
             height: 100vh;
             color: white;
             text-align: center;
+
             h1 {
                 padding-top: 3%;
                 font-size: 5em;
                 font-weight: 300;
                 letter-spacing: 6px;
             }
+
             p {
                 padding: 2%;
                 font-weight: 100;
                 font-size: 1.5em;
 
             }
-            button:nth-child(3){
+
+            button:nth-child(3) {
                 @include button(white, $blue);
             }
-            button:nth-child(4){
+
+            button:nth-child(4) {
                 background: none;
                 border-radius: 6px;
                 padding: 1em 1.5em;
@@ -52,10 +60,11 @@ body {
                 letter-spacing: 1.5px;
                 cursor: pointer;
             }
+
             figure {
                 margin-top: 5%;
                 img {
-                    width:2.5em;
+                    width: 2.5em;
                     height: 2.5em;
                     margin-bottom: 2em;
 
@@ -64,21 +73,23 @@ body {
         }
     }
     .navbar {
+
         background-color: #ebf0f1;
         color: $greyText;
         font-size: 90%;
         font-weight: 400;
         width: 100%;
-        padding: 0 10%;
+        padding: 0 20%;
 
         p {
             padding: 1em;
         }
-    }
-    .nav {
-        li {
-            a{
-                padding: 1em 0.5em;
+
+        .nav {
+            li {
+                a {
+                    padding: 1em 0.5em;
+                }
             }
         }
     }
@@ -135,9 +146,11 @@ body {
             padding: 2% 18%;
             color: white;
             text-align: center;
+
             p {
                 padding: 1em 0 3em 0;
             }
+
             button {
                @include button(white, $green);
                font-size: 2em;
@@ -147,9 +160,11 @@ body {
                margin-bottom: 2em;
             }
         }
+
         .Credits {
             padding: 2% 18%;
             text-align: center;
+
             .credits {
                 display: grid;
                 grid-template-columns: auto auto;
@@ -160,12 +175,14 @@ body {
                     border-radius: 50%;
                     font-size: 1.5em
                 }
+
                 h3 {
                     font-weight: 700;
                     font-size: 1.8em;
                     padding: 0 0 1em 0;
 
                 }
+
                 p {
                     font-size: 1em;
                     font-weight: 300;
@@ -174,6 +191,7 @@ body {
                 }
             }
         }
+
         .DownloadFree {
             background: url(static/img/banner-bg.jpg) no-repeat center bottom;
             background-repeat: no-repeat;
@@ -185,6 +203,7 @@ body {
             p {
                 padding: 1em 0 3em 0;
             }
+
             button {
                @include button(white, $bluefort);
                 margin: 1em;
@@ -196,28 +215,26 @@ body {
             }
         }
 
-        .details{
+        .details {
            @include button(white, $green);
-
         }
+
         .website {
             @include button(white, $blue);
         }
 
-
-    }
-    .contact {
+        .contact {
             padding: 1% 20%;
+
             h2, .subtitle {
                 text-align: center;
-
             }
             section {
-
                 text-align: left;
 
                 form {
                     padding: 0 15% 0 0;
+
                     input {
                         width: 100%;
                         padding: 0.7em;
@@ -225,11 +242,9 @@ body {
                         border: 2px solid lightgrey;
                     }
 
-
                     textarea {
                         width: 100%;
                     }
-
 
                     p{
                         padding-top: 0.5em;
@@ -239,27 +254,29 @@ body {
 
                         }
                     }
-
-
                 }
 
                 p {
                     padding: 2% 0;
                 }
+
                 p:nth-child(2){
-                padding: 0;
+                    padding: 0;
                 }
 
                 h3 {
                     padding: 0.7em 0;
                 }
-                 h3:nth-child(3){
+
+                h3:nth-child(3){
                     padding-bottom: 0;
-                 }
+                }
+
                 ul {
                     padding: 0;
                     display: flex;
                     list-style: none;
+
                     i {
                         background-color: $bluefort;
                         padding: 0.5em;
@@ -271,54 +288,62 @@ body {
                 }
             }
         }
-
     }
 
-    footer {
+    .footer {
         background-color: $grey;
         color: #bac1c8;
-        padding: 0 18%;
-        section {
 
-            h3 {
-                padding: 0.7em 0;
-                font-weight: 100;
-                font-weight: 700;
-                font-size: 1.8em;
-            }
-            p {
-                font-size: 1em;
-                font-weight: 300;
-                padding: 1em 2em 0.3em 0;
-            }
-            a {
-                text-decoration: none;
-                color: $greyText;
-            }
+        footer {
+            padding: 0 18%;
 
-            .flatfytheme{
-                background-color: $bluefort;
-                padding: 1%;
-                color: white;
-                ul {
-                    flex-flow: column;
-                    padding: 0;
-                    list-style: none;
-                    li {
-                        font-size: 1em;
-                        font-weight: 300;
-                        padding: 0.3em 0;
-                    }
-                }
-                div {
+            section {
+                h3 {
                     padding: 0.7em 0;
-                    a {
-                        color: white;
+                    font-weight: 100;
+                    font-weight: 700;
+                    font-size: 1.8em;
+                }
+
+                p {
+                    font-size: 1em;
+                    font-weight: 300;
+                    padding: 1em 2em 0.3em 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $greyText;
+                }
+
+                .flatfytheme {
+                    background-color: $bluefort;
+                    padding: 1%;
+                    color: white;
+
+                    ul {
+                        flex-flow: column;
+                        padding: 0;
+                        list-style: none;
+
+                        li {
+                            font-size: 1em;
+                            font-weight: 300;
+                            padding: 0.3em 0;
+                        }
+                    }
+                    div {
+                        padding: 0.7em 0;
+
+                        a {
+                            color: white;
+                        }
                     }
                 }
             }
         }
     }
+}
 
 @media screen and (max-width : 1371px) {
     @import "mediaqueries";

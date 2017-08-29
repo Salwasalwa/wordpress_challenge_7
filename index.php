@@ -1,6 +1,7 @@
+<?php get_header(); ?>
 
-    <?php get_header(); ?>
-    <main>
+<main>
+    <div class="container">
         <div class="whatis">
             <div class="row">
                 <?php
@@ -157,8 +158,49 @@
                     <button type="button" name="button">Pay With A tweet</button>
                 </div>
             </div>
-
         </div>
-    </main>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+            <section class="row">
+                <form class="col-md-8 col-sm-6" action="index.html" method="post">
+                    <p><label for="">Your Name</label></p>
+                    <input type="text" name="" value="" placeholder="Entre Name">
+                    <p><label for="">Your Email</label></p>
+                    <input type="text" name="" value="" placeholder="Entre Email">
+                    <p><label for="">Message</label></p>
+                    <textarea name="name" rows="8" cols="50"></textarea>
+                    <p><button type="button" name="button">Submit</button></p>
+                </form>
+                <article class="col-md-4 col-sm-6">
+                    <h3>Office Locatiob</h3>
+                    <div class="">
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <h3>Social</h3>
+                    <ul id="social_nav">
+                        <li>
+                            <a href="#" target="blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="blank"><i class="fa fa-google-plus-official"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="blank"><i class="fa fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </div>
+</main>
 
 <?php get_footer();?>

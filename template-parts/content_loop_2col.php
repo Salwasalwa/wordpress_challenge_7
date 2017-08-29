@@ -1,5 +1,5 @@
-
 <?php
+
 foreach ($posts as $post) {
     setup_postdata( $post );
     $tags = wp_get_post_tags($post->ID);
@@ -12,4 +12,5 @@ foreach ($posts as $post) {
                 <?php the_post_thumbnail() ?>
             </div>
         </article>
-        <?php };?>
+        <?php
+}

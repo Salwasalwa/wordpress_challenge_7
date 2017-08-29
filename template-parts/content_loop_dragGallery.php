@@ -31,5 +31,5 @@ foreach ($posts as $post) {
                 <button type="button" name="button" class="website">Vist Website</button>
             </div>
         </article>
-        <?php
+    <?php
 }
