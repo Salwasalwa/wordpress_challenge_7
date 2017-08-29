@@ -1,3 +1,4 @@
+
     <?php get_header(); ?>
     <main>
         <div class="whatis">
@@ -89,7 +90,7 @@
 
                     echo '<h2>'.get_cat_name(7).'</h2>';
                     echo '<h4>'.category_description(7).'</h4>';
-                    get_template_part( 'template-parts/content_loop_whatis'); ?>
+                    get_template_part( 'template-parts/content_loop_sreen'); ?>
                 </div>
             </div>
 
