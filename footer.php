@@ -25,8 +25,6 @@
     </footer>
 </div>
 
-<script src="<?php echo get_stylesheet_directory_uri().'/static/external/jquery/dist/jquery.min.js' ; ?>"></script>
-<script src="<?php echo get_stylesheet_directory_uri().'/static/external/bootstrap/dist/js/bootstrap.min.js'; ?>"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

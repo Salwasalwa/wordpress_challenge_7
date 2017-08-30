@@ -7,10 +7,7 @@ foreach ($posts as $post) {
     ?>
         <article class="col-md-6 col-sm-6 credits">
             <div class="">
-
-                <?php echo '<i class="fa '.$icons.'" aria-hidden="true"></i></div>'
-                ?>
-
+                <?php echo '<i class="fa '.$icons.'" aria-hidden="true"></i></div>'?>
             <div>
                 <h3><?php the_title();?></h3>
                 <?php the_content(); ?>
