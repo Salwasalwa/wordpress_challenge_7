@@ -23,7 +23,7 @@ body {
       color: white;
       text-align: center; }
       body header .flatfy h1 {
-        padding-top: 3%;
+        padding-top: 3em;
         font-size: 5em;
         font-weight: 300;
         letter-spacing: 6px; }
@@ -60,10 +60,10 @@ body {
           margin-bottom: 2em; }
   body .navbar {
     background-color: #ebf0f1;
-    color: #34495e;
-    font-size: 90%;
-    font-weight: 400;
     width: 100%;
+    color: #34495e;
+    font-size: 120%;
+    font-weight: 400;
     padding: 0 20%; }
     body .navbar p {
       padding: 1em; }
@@ -87,23 +87,32 @@ body {
     padding: 0 18%; }
     body main .whatis h4 {
       padding-bottom: 1em; }
-  body main .fullresponsive, body main .DragGallery, body main .FontAwesomeGlyphicon {
+  body main .fullresponsive, body main .dragGallery, body main .fontAwesomeGlyphicon {
     padding: 2% 18%; }
-    body main .fullresponsive img, body main .DragGallery img, body main .FontAwesomeGlyphicon img {
+    body main .fullresponsive img, body main .dragGallery img, body main .fontAwesomeGlyphicon img {
       width: 100%;
       height: 100%; }
-  body main .fullresponsive, body main .FontAwesomeGlyphicon {
+  body main .fullresponsive, body main .fontAwesomeGlyphicon {
     background-color: #f8f8f8; }
-  body main .ScreenApp {
+  body main .whatis img, body main .whatis i, body main .credits img, body main .credits i {
+    transition: all 0.5s ease 0s; }
+  body main .whatis img:hover, body main .whatis i:hover, body main .credits img:hover, body main .credits i:hover {
+    transform: rotate(360deg);
+    transition: 0.5s; }
+  body main .fontAwesomeGlyphicon div {
+    padding-left: 0; }
+    body main .fontAwesomeGlyphicon div .subtitle {
+      padding: 0; }
+  body main .screenApp {
     text-align: center; }
-  body main .GetLiveUpdates {
+  body main .getLiveUpdates {
     background-color: #36485f;
     padding: 2% 18%;
     color: white;
     text-align: center; }
-    body main .GetLiveUpdates p {
+    body main .getLiveUpdates p {
       padding: 1em 0 3em 0; }
-    body main .GetLiveUpdates button {
+    body main .getLiveUpdates button {
       color: white;
       background-color: #00c69d;
       border: none;
@@ -119,36 +128,36 @@ body {
       padding: 2rem 15rem;
       border-radius: 0;
       margin-bottom: 2em; }
-  body main .Credits {
+  body main .credit {
     padding: 2% 18%;
     text-align: center; }
-    body main .Credits .credits {
+    body main .credit .credits {
       display: grid;
       grid-template-columns: auto auto; }
-      body main .Credits .credits i {
-        padding: 3em;
+      body main .credit .credits i {
         background-color: #f8f8f8;
         border-radius: 50%;
-        font-size: 1.5em; }
-      body main .Credits .credits h3 {
+        font-size: 2em;
+        margin-right: 1em;
+        padding: 2.5em; }
+      body main .credit .credits h3 {
         font-weight: 700;
         font-size: 1.8em;
         padding: 0 0 1em 0; }
-      body main .Credits .credits p {
+      body main .credit .credits p, body main .credit .credits div {
         font-size: 1em;
         font-weight: 300;
         text-align: left;
         padding: 1em 0 2em 0; }
-  body main .DownloadFree {
-    background: url(static/img/banner-bg.jpg) no-repeat center bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  body main .downloadFree {
+    background: url(static/img/banner-bg.jpg) no-repeat;
+    background-size: 100% auto;
     padding: 2% 18%;
     text-align: center;
     color: white; }
-    body main .DownloadFree p {
+    body main .downloadFree p {
       padding: 1em 0 3em 0; }
-    body main .DownloadFree button {
+    body main .downloadFree button {
       color: white;
       background-color: #36485f;
       border: none;
@@ -269,8 +278,29 @@ body {
           body .footer footer section .flatfytheme div a {
             color: white; }
 
-@media screen and (max-width: 1371px) {
+@media screen and (max-width: 1270px) {
   body header .flatfy {
-    background-size: auto 100%; } }
+    background-size: auto 100%; }
+  body .navbar {
+    font-size: 90%;
+    font-weight: 400; } }
+@media screen and (max-width: 976px) {
+  body .navbar {
+    font-size: 80%;
+    font-weight: 400; }
+  body main .credit .credits {
+    display: grid;
+    grid-template-columns: auto; }
+    body main .credit .credits h3 {
+      margin: 0; } }
+@media screen and (max-width: 766px) {
+  body .navbar {
+    font-size: 120%; }
+  body main .getLiveUpdates button {
+    border-radius: 0;
+    font-size: 1.5em;
+    padding-left: 2em;
+    padding: 2rem 5rem;
+    margin-bottom: 2em; } }
 
 /*# sourceMappingURL=style.css.map */

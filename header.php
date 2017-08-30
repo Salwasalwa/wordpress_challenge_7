@@ -28,10 +28,10 @@
 
 
                 <div class="nav_menu navbar navbar-default">
-                    <div class="col-lg-6 col-md-4 col-sm-2 col-xs-6">
+                    <div class="col-lg-3 col-md-3 col-sm-2 col-xs-6">
                         <p>Flatfy</p>
                     </div>
-                    <nav class="col-lg-6 col-md-8 col-sm-10 col-xs-6">
+                    <nav class="col-lg-9 col-md-9 col-sm-10 col-xs-6">
 
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">

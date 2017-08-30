@@ -46,7 +46,7 @@
             <button type="button" name="button" class="website">Vist Website</button>
         </div>
 
-        <div class="DragGallery">
+        <div class="dragGallery">
             <div class="row">
                 <?php get_template_part( 'template-parts/content_loop_dragGallery'); ?>
                 </div>
@@ -54,7 +54,7 @@
 
         </div>
 
-        <div class="FontAwesomeGlyphicon">
+        <div class="fontAwesomeGlyphicon">
             <div class="row">
                 <?php
 
@@ -76,7 +76,7 @@
         </div>
 
 
-        <div class="ScreenApp">
+        <div class="screenApp">
             <div class="row">
                 <?php
 
@@ -97,7 +97,7 @@
 
         </div>
 
-        <div class="GetLiveUpdates">
+        <div class="getLiveUpdates">
             <div class="row">
                 <?php
 
@@ -119,7 +119,7 @@
 
         </div>
 
-        <div class="Credits">
+        <div class="credit">
             <div class="row">
                 <?php
 
@@ -139,7 +139,7 @@
             </div>
 
         </div>
-        <div class="DownloadFree">
+        <div class="downloadFree">
             <div class="row">
                 <?php
 

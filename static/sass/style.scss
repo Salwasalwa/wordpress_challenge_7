@@ -32,7 +32,7 @@ body {
             text-align: center;
 
             h1 {
-                padding-top: 3%;
+                padding-top: 3em;
                 font-size: 5em;
                 font-weight: 300;
                 letter-spacing: 6px;
@@ -75,10 +75,10 @@ body {
     .navbar {
 
         background-color: #ebf0f1;
-        color: $greyText;
-        font-size: 90%;
-        font-weight: 400;
         width: 100%;
+        color: $greyText;
+        font-size: 120%;
+        font-weight: 400;
         padding: 0 20%;
 
         p {
@@ -125,7 +125,7 @@ body {
             }
         }
 
-        .fullresponsive, .DragGallery, .FontAwesomeGlyphicon{
+        .fullresponsive, .dragGallery, .fontAwesomeGlyphicon{
             padding: 2% 18%;
             img {
                 width: 100%;
@@ -133,15 +133,34 @@ body {
             }
         }
 
-        .fullresponsive, .FontAwesomeGlyphicon {
+        .fullresponsive, .fontAwesomeGlyphicon {
             background-color: $grey;
         }
 
-        .ScreenApp {
+        .whatis, .credits {
+            img, i {
+                transition: all 0.5s ease 0s;
+            }
+            img:hover, i:hover {
+                transform: rotate(360deg);
+                transition: 0.5s;
+            }
+        }
+
+        .fontAwesomeGlyphicon {
+            div {
+                padding-left: 0;
+                .subtitle {
+                    padding: 0;
+                }
+            }
+        }
+
+        .screenApp {
             text-align: center;
         }
 
-        .GetLiveUpdates {
+        .getLiveUpdates {
             background-color: $bluefort;
             padding: 2% 18%;
             color: white;
@@ -161,7 +180,7 @@ body {
             }
         }
 
-        .Credits {
+        .credit {
             padding: 2% 18%;
             text-align: center;
 
@@ -170,10 +189,11 @@ body {
                 grid-template-columns: auto auto;
 
                 i {
-                    padding: 3em;
                     background-color: $grey;
                     border-radius: 50%;
-                    font-size: 1.5em
+                    font-size: 2em;
+                    margin-right: 1em;
+                    padding: 2.5em;
                 }
 
                 h3 {
@@ -183,7 +203,7 @@ body {
 
                 }
 
-                p {
+                p, div {
                     font-size: 1em;
                     font-weight: 300;
                     text-align: left;
@@ -192,10 +212,9 @@ body {
             }
         }
 
-        .DownloadFree {
-            background: url(static/img/banner-bg.jpg) no-repeat center bottom;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
+        .downloadFree {
+            background: url(static/img/banner-bg.jpg) no-repeat;
+            background-size: 100% auto;
             padding: 2% 18%;
             text-align: center;
             color: white;
@@ -345,6 +364,4 @@ body {
     }
 }
 
-@media screen and (max-width : 1371px) {
-    @import "mediaqueries";
-}
+@import "mediaqueries";
