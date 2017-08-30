@@ -135,6 +135,9 @@ body {
 
         .fullresponsive, .fontAwesomeGlyphicon {
             background-color: $grey;
+            div {
+                padding-left: 0;
+            }
         }
 
         .whatis, .credits {
@@ -145,13 +148,21 @@ body {
                 transform: rotate(360deg);
                 transition: 0.5s;
             }
+
         }
 
         .fontAwesomeGlyphicon {
             div {
-                padding-left: 0;
+
+                h4 {
+                    padding-bottom: 0.5em;
+                }
                 .subtitle {
                     padding: 0;
+
+                    i {
+                        margin-right: 0.5em;
+                    }
                 }
             }
         }
@@ -191,9 +202,12 @@ body {
                 i {
                     background-color: $grey;
                     border-radius: 50%;
-                    font-size: 2em;
+                    font-size: 3em;
+                    padding: 1.5em;
                     margin-right: 1em;
-                    padding: 2.5em;
+                }
+                i:hover {
+                    background-color: $green;
                 }
 
                 h3 {
